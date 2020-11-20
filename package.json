@@ -23,5 +23,7 @@
     "express": "^4.17.1",
     "firebase-admin": "^9.4.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
