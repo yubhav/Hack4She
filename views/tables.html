@@ -29,10 +29,71 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+    
 
+    <!-- <script
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+    <style type="text/css">
+        /* Set the size of the div element that contains the map */
+        #map {
+          height: 200px;
+          /* The height is 400 pixels */
+          width: 200px;
+          /* The width is the width of the web page */
+        }
+      </style>
+
+      <script>
+          function initMap() {
+            let data;
+            // fetch("/lala")
+            // .then(response => response.json())
+            // .then(json => {
+            //     // console.log("json",json.maindata)
+
+            //     data = json.maindata
+
+
+            // });
+
+            // for(i=0;i<1;i++){
+            //     for(j=0;j<3;j++){
+            //         idmain = "map"+j;
+            //         const uluru = { lat: data[i+1][j], lng: data[i+2][j] };
+
+            //         // The map, centered at Uluru
+            //         const map = new google.maps.Map(document.getElementById(idmain), {
+            //             zoom: 6,
+            //             center: uluru,
+            //         });
+            //         // The marker, positioned at Uluru
+            //         const marker = new google.maps.Marker({
+            //             position: uluru,
+            //             map: idmain,
+            //         });
+            //     }
+            // }
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            });
+            }
+      </script> -->
 </head>
 
 <body class="admin">
+    <div id="map"></div>
+
 	<!--[if lt IE 9]>
 		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
 	<![endif]-->
@@ -687,8 +748,8 @@
 
 					<div class="row">
 						<div class="col-sm-12">
-							<h3>Tables
-								<small>included</small>
+							<h3>They Need Your Help
+								<!-- <small>included</small> -->
 							</h3>
 						</div>
 					</div>
@@ -699,7 +760,7 @@
 							<div class="with_border with_padding">
 
 
-								<h3 class="divider_40">Default Table</h3>
+								<!-- <h3 class="divider_40">Default Table</h3>
 								<table>
 									<thead>
 										<tr>
@@ -733,11 +794,11 @@
 											<td>@twitter</td>
 										</tr>
 									</tbody>
-								</table>
+								</table> -->
 
-								<h3 class="divider_40">Bootstrap Stripped Table</h3>
-								<table class="table table-striped">
-									<thead>
+								<h3 class="divider_40">List Of People</h3>
+								<table class="table table-striped" id="people">
+									<!-- <thead>
 										<tr>
 											<th>#</th>
 											<th>First Name</th>
@@ -764,10 +825,10 @@
 											<td>the Bird</td>
 											<td>@twitter</td>
 										</tr>
-									</tbody>
+									</tbody> -->
 								</table>
 
-								<h3 class="divider_40">Bootstrap Bordered Table</h3>
+								<!-- <h3 class="divider_40">Bootstrap Bordered Table</h3>
 								<table class="table table-bordered">
 									<thead>
 										<tr>
@@ -837,7 +898,7 @@
 											<td>@twitter</td>
 										</tr>
 									</tbody>
-								</table>
+								</table> -->
 
 							</div>
 							<!-- .with_border -->
@@ -848,7 +909,7 @@
 					<!-- .row -->
 
 
-					<div class="row topmargin_40">
+					<!-- <div class="row topmargin_40">
 						<div class="col-sm-12">
 							<h3 class="divider_40">Default Table</h3>
 							<table>
@@ -916,9 +977,9 @@
 										<td>@twitter</td>
 									</tr>
 								</tbody>
-							</table>
+							</table> -->
 
-							<h3 class="divider_40">Bootstrap Bordered Table</h3>
+							<!-- <h3 class="divider_40">Bootstrap Bordered Table</h3>
 							<table class="table table-bordered">
 								<thead>
 									<tr>
@@ -988,7 +1049,7 @@
 										<td>@twitter</td>
 									</tr>
 								</tbody>
-							</table>
+							</table> -->
 
 						</div>
 						<!-- .col-* -->
@@ -1003,7 +1064,7 @@
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-sm-6">
-							<p class="grey">&copy; Copyrights 2017</p>
+							<p class="grey">&copy; Copyrights 2020</p>
 						</div>
 						<div class="col-sm-6 text-sm-right">
 							<p class="grey">Last account activity <i class="fa fa-clock-o"></i> 52 mins ago</p>
@@ -1117,7 +1178,15 @@
 	<script src="js/admin/jquery.sparkline.min.js"></script>
 
 	<!-- dashboard init -->
-	<script src="js/admin.js"></script>
+    <script src="js/admin.js"></script>
+    
+    <!-- other -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> -->
+
+    <script src="jsmain/tables.js"></script> 
+
 
 </body>
 
