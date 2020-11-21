@@ -32,6 +32,10 @@ app.get("/", function (req, res) {
     res.render("index.html");
   });
 
+app.get("/gallery", function (req, res) {
+  res.render("gallery.html");
+});
+
 const userRouter = require('./routes/user');
 app.use('/',userRouter);
 
