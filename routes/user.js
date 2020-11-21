@@ -10,6 +10,17 @@ admin.initializeApp({
   databaseURL: "https://hackforshe2020.firebaseio.com"
 });
 
+const db = admin.database();
+
+userRouter.get('/lala', (req, res) => {
+    db.ref('help').once('value', (snapshot) => {
+       data = snapshot.val();
+       console.log("hahaha",data)
+       res.json({maindata: data})
+    //    res.render('index', {contacts: data})
+    });
+})
+
 userRouter.get("/profile", function (req, res) {
     const sessionCookie = req.cookies.session || "";
   
