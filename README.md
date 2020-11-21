@@ -1,5 +1,5 @@
 # Instructions to run locally:
-1. [Download the apk of the app](https://github.com/zabhitak/difesa_)
+1. [Download the apk of the app](https://github.com/yubhav/Hack4She/tree/MobileApplication)
 2. Goto to android studio and open the code file. 
 3. Build the code in the studio 
 4. Install the app in your Android Phone.
