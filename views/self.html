@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>Giving</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<section class="page_topline ls table_section table_section_md columns_padding_0 section_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 text-center text-md-left">
+							<div class="page_social_icons darklinks">
+								<a class="social-icon soc-facebook" href="#" title="Facebook"></a>
+								<a class="social-icon soc-twitter" href="#" title="Twitter"></a>
+								<a class="social-icon soc-google" href="#" title="Google"></a>
+								<a class="social-icon soc-linkedin" href="#" title="LinkedIn"></a>
+								<a class="social-icon soc-flickr" href="#" title="Flickr"></a>
+								<a class="social-icon soc-rss" href="#" title="Rss"></a>
+							</div>
+						</div>
+
+						<div class="col-md-9 text-center text-md-right">
+
+							<div class="content-spacing">
+
+								<div class="media small-teaser text-left">
+									<div class="media-left media-middle">
+										<div class="teaser_icon size_normal">
+											<i class="fa fa-envelope-square" aria-hidden="true"></i>
+										</div>
+									</div>
+									<div class="media-body media-middle">
+										<p class="fontsize_20">
+								info@swaraksha.com
+							</p>
+										<p class="fontsize_12">
+								Our email
+							</p>
+									</div>
+								</div>
+
+								<div class="media small-teaser text-left">
+									<div class="media-left media-middle">
+										<div class="teaser_icon size_normal">
+											<i class="fa fa-phone-square" aria-hidden="true"></i>
+										</div>
+									</div>
+									<div class="media-body media-middle">
+										<p class="fontsize_20">
+								988 841 7209
+							</p>
+										<p class="fontsize_12">
+								9:00 A.M. - 5:00 P.M.
+							</p>
+									</div>
+								</div>
+
+								<!-- <a href="donation.html" class="theme_button color1 wide_button">Donate</a> -->
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G3OBQ5UhW3NrNP"> </script> </form>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<header class="page_header header_darkgrey header_transparent table_section columns_padding_0 section_padding_15 toggler_right">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<a href="./" class="logo">
+								<img src="images/logo-dark.png" alt="" />
+							</a>
+							<!-- header toggler -->
+							<span class="toggle_menu">
+								<span></span>
+							</span>
+						</div>
+						<div class="col-md-9 text-right">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li class="active">
+										<a href="/">Home</a>
+										<!-- <ul>
+											<li>
+												<a href="index.html">MultiPage</a>
+											</li>
+											<li>
+												<a href="index_singlepage.html">SinglePage</a>
+											</li>
+											<li>
+												<a href="admin_index.html">Admin Dashboard</a>
+											</li>
+
+										</ul> -->
+									</li>
+
+									<!-- blog 
+									<li>
+										<a href="blog-right.html">Blog</a>
+										<ul>
+
+											<li>
+												<a href="blog-right.html">Right Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-left.html">Left Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-full.html">No Sidebar</a>
+											</li>
+											<li>
+												<a href="blog-mosaic.html">Blog Grid</a>
+											</li>
+
+											<li>
+												<a href="blog-single-right.html">Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<a href="blog-single-video-right.html">Video Post</a>
+												<ul>
+													<li>
+														<a href="blog-single-video-right.html">Right Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-left.html">Left Sidebar</a>
+													</li>
+													<li>
+														<a href="blog-single-video-full.html">No Sidebar</a>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+									</li>
+									 eof blog -->
+
+									<!-- <li>
+										<a href="#">Login</a>
+										<div class="mega-menu">
+											<ul class="mega-menu-row">
+												<li class="mega-menu-col">
+													
+													<ul>
+														<li>
+															<a href="admin_signin.html">Sign in</a>
+														</li>
+														<li>
+															<a href="admin_signup.html">Sign up</a>
+														</li>
+														
+														
+													</ul>
+												</li>
+												
+										
+												
+												
+
+											</ul>
+										</div> -->
+										<!-- eof mega menu -->
+									<!-- </li> -->
+									<!-- eof features -->
+
+									<li>
+										<a href="/profile">Profile</a>
+										<ul>
+											<li>
+												<a href="/profile">Profile</a>
+											</li>
+											<li>
+												<a href="/login">Login</a>
+											</li>
+
+											<li>
+												<a href="/signup">Signup</a>
+											</li>
+											
+										</ul>
+									</li>
+
+									<li>
+										<a href="/projects">Projects</a>
+										<ul>
+											<li>
+												<a href="/projects">Projects</a>
+											</li>
+											
+											
+										</ul>
+									</li>
+
+
+									<li>
+										<a>Pages</a>
+										<!-- <ul> -->
+											<ul>
+												<li>
+													<a href="/gallery">Gallery</a>
+												</li>
+												<li>
+													<a href="/contact">Contact</a>
+												</li>
+												<li>
+													<a href="/careers">Careers</a>
+												</li>
+												<li>
+													<a href="/selfdefence">Self Defence</a>
+												</li>
+												
+											</ul>
+
+											<!-- features 
+											<li>
+												<a href="shortcodes_teasers.html">Shortcodes &amp; Widgets</a>
+												<ul>
+													<li>
+														<a href="shortcodes_typography.html">Typography</a>
+													</li>
+													<li>
+														<a href="shortcodes_buttons.html">Buttons</a>
+													</li>
+													<li>
+														<a href="shortcodes_pricing.html">Pricing</a>
+													</li>
+													<li>
+														<a href="shortcodes_teasers.html">Teasers</a>
+													</li>
+													<li>
+														<a href="shortcodes_progress.html">Progress</a>
+													</li>
+													<li>
+														<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
+													</li>
+													<li>
+														<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
+													</li>
+													<li>
+														<a href="shortcodes_widgets.html">Widgets</a>
+													</li>
+													<li>
+														<a href="shortcodes_animation.html">Animation</a>
+													</li>
+													<li>
+														<a href="shortcodes_icons.html">Template Icons</a>
+													</li>
+													<li>
+														<a href="shortcodes_socialicons.html">Social Icons</a>
+													</li>
+												</ul>
+											</li>
+											
+-->
+											
+
+											
+
+									<!-- gallery -->
+									<!-- <li>
+										<a href="gallery-regular.html">Pages</a>
+										<ul> -->
+											<!-- Gallery regular -->
+											<!-- <li>
+												<a href="gallery-regular.html">Gallery Regular</a>
+												<ul>
+													<li>
+														<a href="gallery-regular.html">1 column</a>
+													</li>
+													
+												</ul>
+											</li> -->
+											<!-- eof Gallery regular -->
+
+											<!-- Gallery full width 
+											<li>
+												<a href="gallery-fullwidth.html">Gallery Full Width</a>
+												<ul>
+													<li>
+														<a href="gallery-fullwidth.html">2 column</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-3-cols.html">3 columns</a>
+													</li>
+													<li>
+														<a href="gallery-fullwidth-4-cols.html">4 columns</a>
+													</li>
+												</ul>
+											</li>
+											 eof Gallery full width -->
+
+											<!-- Gallery extended 
+											<li>
+												<a href="gallery-extended.html">Gallery Extended</a>
+												<ul>
+													<li>
+														<a href="gallery-extended.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-extended-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-extended-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+										 eof Gallery extended -->
+
+											<!-- Gallery carousel 
+											<li>
+												<a href="gallery-carousel.html">Gallery Carousel</a>
+												<ul>
+													<li>
+														<a href="gallery-carousel.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-2-cols.html">2 columns</a>
+													</li>
+													<li>
+														<a href="gallery-carousel-3-cols.html">3 columns</a>
+													</li>
+												</ul>
+											</li>
+											 eof Gallery carousel -->
+
+											<!-- Gallery tile 
+											<li>
+												<a href="gallery-tile.html">Gallery Tile</a>
+												<ul>
+													<li>
+														<a href="gallery-tile.html">Gallery Tile</a>
+													</li>
+													<li>
+														<a href="gallery-tile2.html">Gallery Tile 2</a>
+													</li>
+												</ul>
+											</li>
+											 eof Gallery tile -->
+
+											<!-- Gallery left sidebar 
+											<li>
+												<a href="gallery-left.html">Gallery Left Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-left.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-left-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											 eof Gallery left sidebar -->
+
+											<!-- Gallery right sidebar 
+											<li>
+												<a href="gallery-right.html">Gallery Right Sidebar</a>
+												<ul>
+													<li>
+														<a href="gallery-right.html">1 column</a>
+													</li>
+													<li>
+														<a href="gallery-right-2-cols.html">2 columns</a>
+													</li>
+												</ul>
+											</li>
+											 eof Gallery right sidebar -->
+
+											<!-- Gallery item 
+											<li>
+												<a href="gallery-single.html">Gallery Item</a>
+												<ul>
+													<li>
+														<a href="gallery-single.html">Style 1</a>
+													</li>
+													<li>
+														<a href="gallery-single2.html">Style 2</a>
+													</li>
+													<li>
+														<a href="gallery-single3.html">Style 3</a>
+													</li>
+												</ul>
+											</li>
+										 eof Gallery item 
+										</ul>
+									</li>-->
+									<!-- eof Gallery -->
+
+									<!-- contacts -->
+									<!-- <li>
+										<a href="contact.html">Contact</a>
+										<ul>
+											<li>
+												<a href="contact.html">Contact 1</a>
+											</li>
+											<li>
+												<a href="contact2.html">Contact 2</a>
+											</li>
+											<li>
+												<a href="contact3.html">Contact 3</a>
+											</li>
+											<li>
+												<a href="contact4.html">Contact 4</a>
+											</li>
+											<li>
+												<a href="contact5.html">Contact 5</a>
+											</li>
+										</ul>
+									</li> -->
+									<!-- eof contacts -->
+
+									<!-- <li>
+										<a href="#" class="search_modal_button">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</a>
+									</li> -->
+								<!-- </ul> -->
+							</nav>
+							<!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="page_breadcrumbs offset_breadcrumbs ds ms parallax section_padding_50">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-6 text-center text-sm-left">
+							<h2>Self Defence Tutorials</h2>
+						</div>
+						<div class="col-sm-6 text-center text-sm-right">
+							<ol class="breadcrumb darklinks grey">
+								<li>
+									<a href="./">
+							Home
+						</a>
+								</li>
+								<li>
+									<a href="#">Pages</a>
+								</li>
+								<li class="active">Self Defence</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds page_video parallax section_padding_100 table_section table_section_md columns_padding_0 columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="embed-responsive embed-responsive-2by1 topmargin_20">
+								<a href="https://youtube.com/embed/T7aNSRoDCmg" class="embed-placeholder">
+									<img src="newimages/wall.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<div class="with_padding_big with_border thick_border right-offset">
+								<h2 class="section_header">
+									<strong>Helping Women all over the ountry</strong>
+								</h2>
+								<!-- <p>Here is a small description of what a women faces and what moral values we should follow in ur lives. We all are same and we should respect every soul.</p> -->
+								
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G3OBQ5UhW3NrNP"> </script> </form>
+					</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds page_video parallax section_padding_100 table_section table_section_md columns_padding_0 columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="embed-responsive embed-responsive-2by1 topmargin_20">
+								<a href="https://youtube.com/embed/9m-x64bKfR4" class="embed-placeholder">
+									<img src="newimages/slide02.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<div class="with_padding_big with_border thick_border right-offset">
+								<h2 class="section_header">
+									<strong>Helping Women all over the ountry</strong>
+								</h2>
+								<!-- <p>Here is a small description of what a women faces and what moral values we should follow in ur lives. We all are same and we should respect every soul.</p> -->
+								
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G3OBQ5UhW3NrNP"> </script> </form>
+					</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds page_video parallax section_padding_100 table_section table_section_md columns_padding_0 columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="embed-responsive embed-responsive-2by1 topmargin_20">
+								<a href="https://youtube.com/embed/k9Jn0eP-ZVg" class="embed-placeholder">
+									<img src="newimages/slide03.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<div class="with_padding_big with_border thick_border right-offset">
+								<h2 class="section_header">
+									<strong>Helping Women all over the ountry</strong>
+								</h2>
+								<!-- <p>Here is a small description of what a women faces and what moral values we should follow in ur lives. We all are same and we should respect every soul.</p> -->
+								
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G3OBQ5UhW3NrNP"> </script> </form>
+					</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ds page_video parallax section_padding_100 table_section table_section_md columns_padding_0 columns_margin_0">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="embed-responsive embed-responsive-2by1 topmargin_20">
+								<a href="https://youtube.com/embed/0UqK3tfuu8Q" class="embed-placeholder">
+									<img src="newimages/wall.jpg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<div class="with_padding_big with_border thick_border right-offset">
+								<h2 class="section_header">
+									<strong>Helping Women all over the ountry</strong>
+								</h2>
+								<!-- <p>Here is a small description of what a women faces and what moral values we should follow in ur lives. We all are same and we should respect every soul.</p> -->
+								
+								<form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G3OBQ5UhW3NrNP"> </script> </form>
+					</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="page_footer ds ms parallax section_padding_50">
+				<div class="container">
+			
+					<div class="row columns_padding_50">
+			
+						<div class="col-md-4">
+							<a href="./" class="logo">
+								<img src="images/logo-dark.png" alt="" />
+							</a>
+							<div class="media fontsize_18">
+								<i class="fa fa-search highlight rightpadding_5"></i>
+								address:
+								<span class="grey">Thapar, Patiala</span>
+							</div>
+							<div class="media fontsize_18">
+								<i class="fa fa-envelope highlight rightpadding_5"></i>
+								email:
+								<span class="grey">info@swaraksha.com</span>
+							</div>
+							<div class="media fontsize_18">
+								<i class="fa fa-phone highlight rightpadding_5"></i>
+								phone:
+								<span class="grey">988 841 7209</span>
+							</div>
+							<div class="topmargin_30 darklinks">
+								<a class="social-icon theme-color-icon soc-facebook" href="#" title="Facebook"></a>
+								<a class="social-icon theme-color-icon soc-twitter" href="#" title="Twitter"></a>
+								<a class="social-icon theme-color-icon soc-google" href="#" title="Google"></a>
+								<a class="social-icon theme-color-icon soc-linkedin" href="#" title="LinkedIn"></a>
+								<a class="social-icon theme-color-icon soc-flickr" href="#" title="Flickr"></a>
+								<a class="social-icon theme-color-icon soc-rss" href="#" title="Rss"></a>
+							</div>
+						</div>
+			
+						<div class="col-md-4 col-sm-6">
+							<div class="topmargin_20">
+								<div class="widget widget_recent_posts">
+			
+									<h3 class="widget-title">From the blog</h3>
+									<ul class="greylinks">
+										<li>
+											<div class="media">
+												<div class="media-left media-middle">
+													<img src="images/recent_post1.jpg" alt="" />
+												</div>
+												<div class="media-body media-middle">
+													<h4><a href="#">Missioners in charge</a></h4>
+													<div class="entry-meta grey darklinks">
+														<span class="entry-date">
+															<time datetime="2017-03-13T08:50:40+00:00">
+																20th of Nov
+															</time>
+														</span>
+														<span>|</span>
+														<span>
+															<i class="fa fa-heart" aria-hidden="true"></i>
+															2
+														</span>
+														<a href="#">
+															<i class="fa fa-comment" aria-hidden="true"></i>
+															4
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+			
+										<li>
+											<div class="media">
+												<div class="media-left media-middle">
+													<img src="images/recent_post2.jpg" alt="" />
+												</div>
+												<div class="media-body media-middle">
+													<h4><a href="#">Celebrating the adoption</a></h4>
+													<div class="entry-meta grey darklinks">
+														<span class="entry-date">
+															<time datetime="2017-03-13T08:50:40+00:00">
+																21st of Nov
+															</time>
+														</span>
+														<span>|</span>
+														<span>
+															<i class="fa fa-heart" aria-hidden="true"></i>
+															3
+														</span>
+														<a href="#">
+															<i class="fa fa-comment" aria-hidden="true"></i>
+															1
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+			
+										<li>
+											<div class="media">
+												<div class="media-left media-middle">
+													<img src="images/recent_post3.jpg" alt="" />
+												</div>
+												<div class="media-body media-middle">
+													<h4><a href="#">Charity for everyone</a></h4>
+													<div class="entry-meta grey darklinks">
+														<span class="entry-date">
+															<time datetime="2017-03-13T08:50:40+00:00">
+																21st of Nov
+															</time>
+														</span>
+														<span>|</span>
+														<span>
+															<i class="fa fa-heart" aria-hidden="true"></i>
+															6
+														</span>
+														<a href="#">
+															<i class="fa fa-comment" aria-hidden="true"></i>
+															18
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-md-4 col-sm-6">
+							<div class="widget widget_instagram topmargin_20">
+								<h3 class="widget-title">Our Happy faces</h3>
+								<div class="instafeed">
+			
+								</div>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ds ms parallax">
+				<div class="container with_top_border">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="greylinks">Copyright 2020 - <a href="#">Hack4She</a>. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
