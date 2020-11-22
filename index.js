@@ -32,11 +32,29 @@ app.get("/", function (req, res) {
     res.render("index.html");
   });
 
+app.get("/selfdefence", function (req, res) {
+  res.render("self.html");
+});
+
+app.get("/contact", function (req, res) {
+  res.render("contact.html");
+});
+
+app.get("/careers", function (req, res) {
+  res.render("careers.html");
+});
+
 app.get("/gallery", function (req, res) {
   res.render("gallery.html");
 });
 
-const userRouter = require('./routes/user');
+// const userRouter = require('./routes/user');
+// app.use('/',userRouter);
+
+// const otherRouter = require('./routes/other');
+// app.use('/',otherRouter);
+
+const userRouter = require('./routes/other');
 app.use('/',userRouter);
 
 app.get("/projects", (req,res)=>{
